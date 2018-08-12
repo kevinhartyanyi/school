@@ -1,0 +1,8 @@
+5
+H Aqua 100
+M Rex 44
+K Leo 55
+H Cherry 50
+M Moa 30
+K Clyde 20
+rrrrr

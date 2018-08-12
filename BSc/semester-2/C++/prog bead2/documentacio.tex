@@ -1,0 +1,297 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amssymb, amsmath}
+\usepackage{multirow}
+\usepackage{struktex}
+\usepackage{tabularx}
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset { %
+	language=C++,
+	backgroundcolor=\color{black!5}, % set backgroundcolor
+	basicstyle=\footnotesize,% basic font setting
+}
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\DeclareMathOperator*{\maxi}{MAX}
+\newcommand*{\field}[1]{\mathbb{#1}}
+
+\title {Programozás 2.beadandó}
+\date {2018.03.31}
+\author {Hartyányi Kevin}
+
+\begin{document}	
+	\pagenumbering{gobble}
+	\maketitle
+	\tableofcontents
+	\listoftables
+	\newpage
+	\pagenumbering{roman}
+	
+	\section{Feladat}
+	
+	Egy szöveges állományban a Formula 1 autóverseny ez évi bajnokságának eddigi
+	eredményeit tároljuk csapatok, azon belül versenyzők szerint rendezett formában. (Egy
+	csapat két versenyzőt futtat.) Az állomány minden sorában egy versenyzőnek egy
+	versenyen elért helyezése található. Egy sor adatai: a versenyző neve (sztring), a
+	csapatának neve (sztring), verseny helyszíne (sztring), helyezés (pozitív egész szám),
+	szóközökkel és/vagy tabulátor jelekkel vannak elválasztva. Melyik versenyző vezeti
+	jelenleg a bajnokságot?
+	
+	Feltehetjük, hogy az állomány sorai helyesen vannak kitöltve. Egy versenyen az elért
+	helyezésük alapján az alábbi pontszámot kapják a versenyzők:
+	\url{www.formula1.com/inside_f1/rules_and_regulations/sporting_regulations/8681/}
+	\begin{table}[h!]
+		\begin{center}
+			\caption{Pontszámok}
+			\label{tab:pontszamok}
+			\begin{tabular}{l|r}
+				\textbf{Helyezés} & \textbf{Pontszám} \\
+				\hline
+				1st: & 25\\
+				2nd: &18 \\
+				3rd:& 15\\
+				4th: &12 \\
+				5th: &10 \\
+				6th: &8 \\
+				7th: &6 \\
+				8th:& 4 \\
+				9th: &2 \\
+				10th :& 1 \\				
+			\end{tabular}
+		\end{center}
+	\end{table}	
+
+	\section{Specifikáció}	
+		
+			$A = (x: infile(R), n:\field{C}h^*)$\\
+			 \begin{flushright}
+			 	$R = rec($név: $\field{C}h^*$, csapat: $\field{C}h^*$, hely: $\field{C}h^*$, helyezés: $ int$)\\
+			 \end{flushright}
+			$Ef = (x = x' \wedge |x| \geq 1 \wedge \forall i [1\ldots x-1]:(x_i$.név$ \leq x_{i+1}$.név 
+			$\wedge x_i$.név$ = x_{i+1}$.név$ \Rightarrow x_i$.csapat$ \leq x_{i+1}$.csapat ))	\\\\
+			Azonban így csak nagyon bonyolultan tudnánk felírni az utófeltételt. Ezért a feladat szempontjából érdemesebb egy olyan felsoroló objektumra megfogalmazni, mely képes összegezni egy adott játékos által elért összpontot.
+			\begin{align*}
+				A &= (t: enor(PAR), n:\field{C}h^*)\\
+				Ef &= (t = t' \wedge |t|> 0)\\
+				Uf &= ((-,(nev,-)) = \maxi_{\mathbf{e \in t'}} e.pont)
+			\end{align*}
+			\newpage
+			\subsection{Visszavezetés}
+			Az utófeltételből látszik, hogy maximumkiválasztást kell használnunk.\\PAR = (név:$\field{C}h^*$, pont: int)
+			\begin{table}[h!]
+				\caption{Visszavezetés}
+				\label{tab:visszavezetes}
+				\begin{center}
+					\begin{tabular}{|c|c|}
+						\hline 
+						Tétel & Feladat \\ 
+						\hline 
+						E & PAR \\ 
+						\hline 
+						\multirow{2}{*}{$\beta:E \longrightarrow H$}& $f: PAR \longrightarrow \field{N}$ \\ 
+						& $f(e) = e.pont$ \\ 
+						\hline 
+						max & - \\ 
+						\hline 
+						elem & (n, -) \\ 
+						\hline 
+					\end{tabular} 
+				\end{center}
+			\end{table}
+		\\		
+			\begin{struktogramm}(150,50)
+				\assign{\mbox{}\hfil t.First()}	
+				\assign{\mbox{}\hfil max, elem:= t.Current().pont, t.Current()}
+				\assign{\mbox{}\hfil t.Next()}
+				\while[4]{\mbox{}\hfil $\neg $t.End()}
+				\ifthenelse{5}{5} {t.Current().pont $>$ max}{Yes}{No}
+				\assign{max, elem:= t.Current().pont, t.Current()}
+				\change				
+				\ifend
+				\assign{\mbox{}\hfil t.Next()}
+				\whileend
+			\end{struktogramm}
+		\\
+	\subsection{Felsoroló}
+	\begin{table}[h!]
+		\caption{Felsoroló}
+		\begin{center}
+			\begin{tabular}{l|l}
+				\hline
+				enor(PAR) & first(), next(), current(), end()\\
+				\hline
+				x: infile(String), dx: R, sx: Státusz & first(): sx, dx, x: read; next()  \\
+				& next(): külön \\
+				akt: PAR & current(): akt\\
+				vége: $\field{L}$ & end(): vége
+			\end{tabular}			
+		\end{center}		
+	\end{table} 
+	
+A next()-nek az alábbi műveletet kell végrehajtania:\\
+
+Adott egy szöveges állomány, melynek minden sorában egy versenyző adatai szerepelnek, melyek közül már kiolvastuk az első sort (ez van a dx változóban, ha a kiolvasás nem volt sikeres, akkor sx = abnorm) és a következő sorokat kell feldolgozni. Ha sx = norm akkor elkezdi a feladatot végrehajtani a next, különben a vége változót igazra állítja.\\
+
+Először az akt változó név részét beállítjuk a dx változó név részére és az akt összpont részét nullára állítjuk. Ezután a már korában látott helyezés-pontszám táblázatból megnézzük, hogy az adott versenyen mennyi pontot ért el és az eredményt hozzáadjuk az akt összpont részéhez, végül beolvassuk a következő sort és ha az nem a fájl vége és dx név része megegyezik az előbb beállított akt név részével, (tehát a sorban ugyan arról a versenyzőről van információ) akkor a elvégezzük az előbb említett folyamatot és ezt addig folytatjuk amíg a feltétel igaz.
+\newpage
+\subsection{Next() specifikációja}
+	\begin{align*}
+		A^{next} &= (x: infile(String), dx: R, sx: Status, vege: \field{L}, akt: PAR) \\
+		Ef^{next} &= (x = x'\wedge dx = dx' \wedge sx = sx' \wedge akt.pont = 0 \wedge akt.nev = dx.nev) \\
+		Uf^{next} &= (vege = \neg(sx = norm) \wedge \neg (vege \longrightarrow \sum_{dx\in x}^{dx = norm \wedge akt.nev = dx.nev} akt.pont = akt.pont + szamit(dx.helyezes)))	
+	\end{align*}
+	
+	\begin{flushright}
+		\begin{equation*}
+		szamit(x) =
+		\begin{cases}
+		25 & \text{ha x = 1} \\
+		18 & \text{ha x = 2} \\
+		15 & \text{ha x = 3} \\
+		12 & \text{ha x = 4} \\
+		10 & \text{ha x = 5} \\
+		8 & \text{ha x = 6} \\
+		6 & \text{ha x = 7} \\
+		4 & \text{ha x = 8} \\
+		2 & \text{ha x = 9} \\
+		1 & \text{ha x = 10} \\
+		0 & \text{különben}
+		\end{cases}
+		\end{equation*}
+	\end{flushright}
+	\subsection{Next() struktogramja}
+	
+	\begin{struktogramm}(150,50)
+		\ifthenelse{5}{5} {sx = norm}{Yes}{No}
+		\assign{\mbox{}\hfil vege:= hamis}	
+		\assign{\mbox{}\hfil akt.pont:= 0}	
+		\assign{\mbox{}\hfil akt.név:= dx.név}		
+		\while[4]{\mbox{}\hfil sx = norm $\wedge$ akt.név = dx.név}
+		\assign{\mbox{}\hfil akt.pont:= akt.pont + szamit(dx.helyezes)}
+		\assign {\mbox{}\hfil sx, dx, x: read}
+		\whileend
+		\change
+		\assign {\mbox{}\hfil vége:= igaz}
+		\ifend
+	\end{struktogramm}
+
+	\begin{struktogramm}(150,50)
+		\case[11]{11}{11}{dx.helyezes}{1}
+		\assign{25}
+		\switch{2}
+		\assign{18}
+		\switch{3}
+		\assign{15}
+		\switch{4}
+		\assign{12}
+		\switch{5}
+		\assign{10}
+		\switch{6}
+		\assign{8}
+		\switch{7}
+		\assign{6}
+		\switch{8}
+		\assign{4}
+		\switch{9}
+		\assign{2}
+		\switch{10}
+		\assign{1}
+		\switch{különben}
+		\assign{0}
+		\switch[r]{0}
+		\assign{szamit() függvény}
+		\caseend
+
+	\end{struktogramm}
+\newpage
+	\section{Implementáció}
+	\subsection{Program váz}
+	\begin{table}[h!]
+		\caption{Program váz}
+		\begin{center}			
+			\label{tab:programvaz}
+			\begin{tabular}{l|l|l|l}
+				\textbf{main.cpp} & \textbf{list.h} & \textbf{listenor.h} & \textbf{listenor.cpp}\\
+				\hline
+				int main() & struct R  &enum Status & void read()\\
+				 & struct PAR &  class Listenor & void next()\\
+				& & void First() & Listenor() \\
+				& & bool End() \\
+				& & PAR current()				
+			\end{tabular}
+		\end{center}
+	\end{table}
+	\subsection{Felsoroló osztálya}
+	\begin{lstlisting}
+class Listenor
+{
+	public:
+		enum Status{abnorm, norm};
+		enum Exceptions{FILEERROR};
+	
+		Listenor(std::string filename);
+		void First() {read(); Next();};
+		void Next();
+		Scores Current() const {return akt;};
+		bool End() const {return end;};
+	
+	
+	private:
+		bool end;
+		void read();
+		Scores akt;
+		List dx;
+		Status sx;
+		std::ifstream x;
+};
+	\end{lstlisting}
+	A szöveget a getline(x, n) utasítással olvassuk be soronként, melyet a read() műveletbe helyezünk el, itt n stringstream típusú. Az olvasás után beállítjuk az sx értékét, és ha az olvasás sikeres, akkor feltöltjük a dx változót az n változóból. \\
+	
+	\subsection{Tesztelési terv}
+	A programban egy összegzés és egy maximum-kíválasztás tételt használtunk fel.
+	
+	\begin{enumerate}
+		\item Összegzés alapján
+		\begin{enumerate}
+			\item itervallum hossza szerint:
+			\begin{enumerate}
+				\item Üres fájl
+				\item Csak üres sorokat tartalmazó fájl
+				\item Egyetlen csapatott tartalmazó fájl
+				\item Sok csapatot tartalmazó fájl
+			\end{enumerate}
+			\item intervallum eleje és vége szerint:
+			\begin{enumerate}
+				\item Több csapatott tartalmazó fájl, ahol az első versenyzőnek 0 pontja van
+				\item Több csapatott tartalmazó fájl, ahol az utolsó versenyzőnek 0 pontja van
+				\item Több csapatott tartalmazó fájl, ahol az egyik csapatban az egyik versenyzőnek 0 pontja van, míg a másiknak van.				
+			\end{enumerate}
+		\end{enumerate}
+		\item Maximum-kiválasztás alapján
+		\begin{enumerate}
+			\item itervallum hossza szerint:
+			\begin{enumerate}
+				\item Kevés versenyzőt tartalmazó állomány
+				\item Sok versenyzőt tartalmazó állomány
+				\item Minden versenyzőnek ugyanannyi pontja van
+				\item Minden versenyzőnek különböző pontja van
+			\end{enumerate}
+			\item intervallum eleje és vége szerint:
+			\begin{enumerate}
+				\item Az első versenyzőnek van maximum pontja
+				\item Az utolsó versenyzőnek van maximum pontja
+				\item Több versenyzőnek van maximum pontja				
+			\end{enumerate}
+		\end{enumerate}		
+	\end{enumerate}
+		
+			
+			
+			
+		
+	
+		
+\end{document}
