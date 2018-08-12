@@ -1,5 +1,0 @@
-3
-H Aqua 60
-M Rex 80
-K Leo 50
-jar
