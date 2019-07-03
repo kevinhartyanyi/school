@@ -1,0 +1,1 @@
+main.adb:22:51: warning: "Customer1" may be referenced before it has a value

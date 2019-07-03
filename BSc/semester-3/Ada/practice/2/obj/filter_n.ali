@@ -1,0 +1,34 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U filter_n%b		filter_n.adb		aee9d266 NE OO SU GE IL
+
+U filter_n%s		filter_n.ads		51cc87a3 BN EE NE OO GE
+
+D filter_n.ads		20181104122204 51cc87a3 filter_n%s
+D filter_n.adb		20181104123112 ff2555c5 filter_n%b
+D system.ads		20180524051738 32a08138 system%s
+X 1 filter_n.ads
+2i4 Size{positive} 2|13r17
+3+9 Item 5r49 6r34
+4E9 Index 5r30 2|2r8 9r16
+5A9 Item_Array(3+9)<4E9> 7r28 7r49 2|1r28 1r49
+6V18 Condition{boolean} 6>28 2|7s10
+6*28 I{3+9}
+7u11*filter_n 7>20 7<39 7=61 2|1b11 15t4
+7*20 InT{5A9} 2|1b20 6r13 7r20 8r23
+7*39 OutT{5A9} 2|1b39 2r17 8m10
+7i61 n{natural} 2|1b61 5m4 10m10 10r15
+X 2 filter_n.adb
+2*4 ind{1|4E9} 8r15 9m10 9r27
+3i4 count{natural} 12m7 12r16 13r24
+6e8 I 7r24 8r27
+

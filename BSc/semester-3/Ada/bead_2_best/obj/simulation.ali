@@ -1,0 +1,236 @@
+V "GNAT Lib v2018"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_IMPLICIT_HEAP_ALLOCATIONS
+RV NO_IMPLICIT_PROTECTED_OBJECT_ALLOCATIONS
+RV NO_LOCAL_ALLOCATORS
+RV NO_LOCAL_PROTECTED_OBJECTS
+RV NO_PROTECTED_TYPES
+RV NO_RELATIVE_DELAY
+RV NO_SELECT_STATEMENTS
+RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_ALLOCATORS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_TERMINATE_ALTERNATIVES
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+RV MAX_SELECT_ALTERNATIVES=3
+RV MAX_TASK_ENTRIES=3
+RV MAX_TASKS=1+
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U simulation%b		simulation.adb		de271b14 NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system%s		system.ads		system.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-calend.ads		20180524051738 372815c8 ada.calendar%s
+D a-caldel.ads		20180524051736 9f20b83d ada.calendar.delays%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-finali.ads		20180524051738 bf4f806b ada.finalization%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20180524051736 bb51c45a ada.numerics%s
+D a-nudira.ads		20180524051736 71e55def ada.numerics.discrete_random%s
+D a-nudira.adb		20180524051736 72908cdb ada.numerics.discrete_random%b
+D a-reatim.ads		20180524051738 0240fc73 ada.real_time%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051738 491b781d ada.tags%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-c.ads		20180524051736 5421119b interfaces.c%s
+D i-cstrin.ads		20180524051736 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D simulation.adb	20181208092308 0e672cf2 simulation%b
+D simulation-agent.adb	20181208092130 1168534b simulation.agent
+D simulation-base.adb	20181208084648 be5db9b7 simulation.base
+D simulation-map.adb	20181208091306 9740d867 simulation.map
+D simulation-printer.adb  20181208084242 c8d65ff1 simulation.printer
+D simulation-projectile.adb  20181206083916 9a174a37 simulation.projectile
+D simulation-safe_random.adb  20181206062816 8108cb6c simulation.safe_random
+D simulation-ship.adb	20181208091650 c2043562 simulation.ship
+D system.ads		20180524051738 32a08138 system%s
+D s-atacco.ads		20180524051738 4c36d12f system.address_to_access_conversions%s
+D s-conca3.ads		20180524051738 0b705ca5 system.concat_3%s
+D s-conca4.ads		20180524051738 7e642b20 system.concat_4%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-finroo.ads		20180524051738 4ff27390 system.finalization_root%s
+D s-imenne.ads		20180524051736 614c06c0 system.img_enum_new%s
+D s-imgint.ads		20180524051736 02dbe0c2 system.img_int%s
+D s-imguns.ads		20180524051736 9ff43cf7 system.img_uns%s
+D s-multip.ads		20180524051736 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20180524051738 2e5b26a9 system.os_interface%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-rannum.ads		20180524051736 99ade2f2 system.random_numbers%s
+D s-rannum.adb		20180524051738 20ba1217 system.random_numbers%b
+D s-ransee.ads		20180524051738 01a57b33 system.random_seed%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stausa.ads		20180524051736 017a0a05 system.stack_usage%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20180524051738 601f6b72 system.task_info%s
+D s-taspri.ads		20180524051738 6c1d93d4 system.task_primitives%s
+D s-taprop.ads		20180524051738 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20180524051738 1d8c1ccb system.tasking%s
+D s-taprob.ads		20180524051738 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20180524051738 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20180524051738 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20180524051738 cca55c94 system.tasking.stages%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-valuns.ads		20180524051738 10a8ed3b system.val_uns%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+D s-win32.ads		20180524051736 b7f96285 system.win32%s
+X 1 ada.ads
+16K9*Ada 20e8 19|1r6 1r36 7r30 23|6r7 14r19 16r19 20r19 22r19 26r10
+X 7 a-numeri.ads
+16K13*Numerics 32e17 19|1r10 7r34
+X 8 a-nudira.ads
+42E9 Result_Subtype 19|7r59
+44k22*Discrete_Random 75e33 19|1w19 7r43
+50R9 Generator<41|63R9> 19|19r21[7]
+52V13 Random{integer} 25|9s28[19|7] 10s28[19|7]
+55U14 Reset<41|100p14> 25|14s21[19|7]
+X 9 a-nudira.adb
+53V16 Random[41|83]{integer} 42|392b13[19|7]
+X 13 a-textio.ads
+49K13*Text_IO 471e16 19|1w40 23|6r11 14r23 16r23 20r23 22r23 26r14
+242U14*Put 23|14s31 16s31 20s31 22s31
+263U14*Put_Line 23|6s19 26s22
+X 15 interfac.ads
+74M9*Unsigned_32
+77M9*Unsigned_64
+X 19 simulation.adb
+2U11*Simulation 2b11 108l5 108t15 20|1r11 21|1r11 22|1r11 23|1r11 24|1r11
+. 25|1r11 26|1r11
+4i4 Max{integer} 6r37 53r33 53r41 54r34 54r42 22|8r19 9r22 10r22 20r28 20r32
+. 21r28 21r32 36r19 37r22 23|10r19 11r22 12r22
+6I12 Size{integer} 7r77
+7K12 Random_Int[8|44] 19r10 25|9r17 10r17 14r10
+9R9 Cord 12e14 15r35 76r30 77r30 22|49r27 54r27 24|4r7 25|4r32 26|47r16
+10i7 X{integer} 22|51r24 56r17 57r17 25|9m12 26|50r18
+11i7 Y{integer} 22|51r29 56r22 57r22 24|7r34 9r29 25|10m12 26|50r24
+14w14 Safe_Random 22b19 24|6r4 25|3b16 16l8 16t19 26|49r13
+15U17 Get_Random 15<28 24|6s16 25|4b14 11t10 26|49s25
+15r28 R{9R9} 25|4b25 9m10 10m10
+16U17 Initalise 25|7s13 12b17 15t10
+18b7 Ready{boolean} 25|6r17
+19r7 G{8|50R9[7]} 25|9r35 10r35 14r27
+25E9 Faction 25e37 27r25 39r31 21|9r37 16r46 22r39
+25n21 Rebel{25E9} 102r27 21|32r14 24|9r17 26|25r36
+25n28 Imperial{25E9} 101r27 24|7r14 26|27r36
+27T14 Base 27d19 32l8 32e12 36r31 83b14 101r22 102r22 21|3b11 40l5 40t9
+27e19 Side{25E9} 21|9r51 16r60 22r53 32r7
+28Y13 Send_Out_Ships 28>28 21|7b11 11l8 11t22 22|20s11 21s11
+28i28 I{integer} 21|8r16
+30Y13 Ship_Lost 21|14b17 18l14 18t23 26|13s21
+31Y13 Destroy 21|20b17 25l14 25t21 26|53s21
+36P9 Base_Access(27T14) 45r38 74r27 74r45 97r16 98r16 22|4r24 4r42
+39T14 Projectile 39d25 40l8 40e18 42r28 89b14 24|3b11 12l5 12t15 26|25r25
+. 27r25
+39e25 Side{25E9} 24|7r7 9r10
+42P9 P_Access(39T14) 26|5r7
+45T14 Ship 45d19 45d32 48l8 48e12 52r31 66b14 22|11r36 14r36 22r27 26|3b11
+. 62l5 62t9
+45i19 ID{integer} 26|7r7 24r16
+45p32 Side{36P9} 26|13r16 53r16
+46Y13 Hit 22|57s25 26|10b20 15l17 15t20
+47Y13 Call_Back 20|6s15 26|17b20 21l17 21t26 38b20 42l17 42t26
+52P9 Ship_Access(45T14) 53r49 70r26
+53A9 Ship_Array(52P9)<integer><integer> 57r14
+54A9 Stats_Array(boolean)<integer><integer> 58r14
+56R9 Matrix 59e14 63r31 75r31 80r9 22|44r28 23|8r28
+57a7 Ships{53A9} 22|11m18 14m18 22m9 38r35 41r29 57r9
+58a7 Stats{54A9} 22|17m15 51r16 56m9 23|13r21 19r21
+61w14 Printer 91b19 21|9r7 16r13 22r13 30r4 33r7 36r7 22|24r7 26r7 34r7 58r7
+. 23|3b16 29l5 29t12 26|11r16 18r16 39r16 45r10 51r16
+62U17 Out_Text 62>26 21|9s15 16s21 22s21 30s12 33s15 36s15 22|24s15 34s15
+. 23|4b14 7t7 26|11s24 18s24 39s24 45s18 51s24
+62a26 O{string} 23|4b23 6r28
+63U17 Out_Map 63>25 22|26s15 58s15 23|8b14 28t7
+63r25 O{56R9} 23|8b22 13r19 19r19
+70T14 Agent 70d20 71r32 87b14 20|3b11 10t7 22|38r27 41r21
+70p20 Ship{52P9} 20|6r10
+71P9 Agent_Access(70T14) 22|32r15
+73w14 Map 85b19 103r4 21|39r4 22|3b16 60l5 60t8 24|7r49 8r7 9r46 10r7
+74U17 Init 74>22 74>40 103s8 22|4b14 29t7
+74p22 Imp{36P9} 22|4b19 11r53 20r7 22r35
+74p40 Reb{36P9} 22|4b37 14r50 21r7
+75V16 Get_Map{56R9} 22|44b13 47t7
+76V16 Get_Status{boolean} 76>27 22|49b13 52t7 24|7s53 9s50
+76r27 C{9R9} 22|49b24 51r22 51r27
+77U17 Lost_Ship 77>27 22|54b14 59t7 24|8s11 10s11
+77r27 C{9R9} 22|54b24 56r15 56r20 57r15 57r20
+78U17 End_Fight 21|39s8 22|31b14 42t7
+80r7 M{56R9} 22|11r16 14r16 17r13 22r7 26r23 38r33 41r27 46r14 51r14 56r7
+. 57r7 58r23
+97p4 Death_Star{36P9} 101m4 103r13
+98p4 Rebel_Base{36P9} 102m4 103r25
+X 21 simulation-base.adb
+4i4 Ships{integer} 8m7 9r73 12r10 15m13 15r22 16r97 21m13
+7i26 I{integer}
+X 22 simulation-map.adb
+5i7 ImperialID{integer} 11r41 12m16 12r30
+6i7 RebelID{integer} 14r41 15m16 15r27
+8i11 I{integer} 11r24 14r24 17r21
+9i14 J{integer} 10r16 11r26 14r26 17r23
+32p7 AgentP{19|71P9} 38m13 41m7
+36i11 I{integer} 38r41
+37i14 J{integer} 38r43
+X 23 simulation-printer.adb
+10i11 I{integer} 13r27 19r27
+11i14 J{integer} 12r16 13r29 19r29
+X 24 simulation-projectile.adb
+4r4 C{19|9R9} 6m27 7r32 7r64 8r21 9r27 9r61 10r21
+X 26 simulation-ship.adb
+4b4 Fight{boolean} 8r13 14m16 20m16 36r13 41m16 52m16
+5p4 P{19|42P9} 25m16 27m16
+47r13 C{19|9R9} 49m36 50r16 50r22
+X 41 s-rannum.ads
+75V13*Random{15|74M9} 42|221i21
+76V13*Random{15|77M9} 42|221i21
+X 47 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

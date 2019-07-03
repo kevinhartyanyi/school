@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>2b.jpg</file>
+        <file>akarin.gif</file>
+    </qresource>
+</RCC>

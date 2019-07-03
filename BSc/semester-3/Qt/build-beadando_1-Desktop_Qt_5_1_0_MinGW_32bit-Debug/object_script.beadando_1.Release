@@ -1,0 +1,14 @@
+INPUT(
+./release\main.o
+./release\game.o
+./release\tablesize.o
+./release\warrior.o
+./release\gameover.o
+./release\create.o
+./release\qrc_resources.o
+./release\moc_game.o
+./release\moc_tablesize.o
+./release\moc_warrior.o
+./release\moc_gameover.o
+./release\moc_create.o
+);

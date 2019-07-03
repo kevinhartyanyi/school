@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__simulation.o
+[PROJECT FILES]
+C:\Users\Kevin\Desktop\semester 3\Ada\bead_1.gpr
+20181019190940
+[BOUND OBJECT FILES]
+C:\Users\Kevin\Desktop\semester 3\Ada\obj\bag_package.o
+C:\Users\Kevin\Desktop\semester 3\Ada\obj\map_package.o
+C:\Users\Kevin\Desktop\semester 3\Ada\obj\warrior_package.o
+C:\Users\Kevin\Desktop\semester 3\Ada\obj\simulation.o
+[GENERATED SOURCE FILES]
+b__simulation.ads
+b__simulation.adb
+b__simulation.ali
+[RESULTING OPTIONS]
+-LC:\Users\Kevin\Desktop\semester 3\Ada\obj\
+-LC:\Users\Kevin\Desktop\semester 3\Ada\obj\
+-LC:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

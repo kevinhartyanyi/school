@@ -1,0 +1,71 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U bag_package%b		bag_package.adb		c4043ebb NE OO PK GE
+
+U bag_package%s		bag_package.ads		fe4e038a BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051738 491b781d ada.tags%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D bag_package.ads	20181014133514 7653b0d0 bag_package%s
+D bag_package.adb	20181020121236 b2578e6b bag_package%b
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 8|1r6 9|30r10
+X 6 a-textio.ads
+49K13*Text_IO 471e16 8|1w10 9|30r14
+263U14*Put_Line 9|30s22
+X 8 bag_package.ads
+4E9 Index 10r35 11r38 12r31 17r21 19r13 9|10r35 15r38 22r31 30r31
+5E9 Counter 17r40 9|6r15 12r18 17r21 18r21 24r25 30r55
+7k9*Bag_Package 4z9 5z9 17E9 22l5 22e16 9|1b14 35l5 35t16
+8R9*Bag 9r30 10r28 11r31 12r24 14r23 18c9 20e17 9|3r30 10r28 15r31 22r24
+. 27r23
+9U14*Empty 9=20 9|3b14 8t7
+9r20 B{8R9} 9|3b20 5r16
+10U14*Add 10=18 10>33 9|10b14 13t7
+10r18 B{8R9} 9|10b18 12m7 12r31
+10*33 I{4E9} 9|10b33 12r12 12r36
+11U14*Remove 11=21 11>36 9|15b14 20t7
+11r21 B{8R9} 9|15b21 17r10 18m10 18r34
+11*36 I{4E9} 9|15b36 17r15 18r15 18r39
+12V13*Has_Any{boolean} 12>22 12>29 9|22b13 25t7
+12r22 B{8R9} 9|22b22 24r15
+12*29 I{4E9} 9|22b29 24r20
+14U14*write 14>20 9|27b14 32t7
+14r20 B{8R9} 9|27b20 29r16 30r69
+17A9 T(5E9)<4E9> 19r11
+19a7 MT{17A9} 9|5r18 12m9 12r33 17r12 18m12 18r36 24r17 29r18 30r71
+X 9 bag_package.adb
+5*11 E{8|5E9} 6m10
+29e11 E 30r43 30r74
+

@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>packs/default/1.png</file>
+        <file>packs/default/2.png</file>
+        <file>packs/default/3.png</file>
+        <file>packs/default/4.png</file>
+        <file>packs/default/5.png</file>
+        <file>packs/default/6.png</file>
+        <file>packs/default/7.png</file>
+        <file>packs/default/8.png</file>
+        <file>packs/default/9.png</file>
+        <file>packs/default/10.png</file>
+        <file>packs/default/11.png</file>
+        <file>packs/default/12.png</file>
+        <file>packs/default/13.png</file>
+        <file>packs/default/14.png</file>
+        <file>packs/default/15.png</file>
+        <file>packs/default/16.png</file>
+        <file>packs/default/back.png</file>
+        <file>packs/default/name.txt</file>
+    </qresource>
+</RCC>

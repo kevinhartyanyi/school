@@ -1,0 +1,102 @@
+V "GNAT Lib v2018"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U bag_test%b		bag_test.adb		5cb12069 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W bag_package%s		bag_package.adb		bag_package.ali
+Z interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20180524051736 bb51c45a ada.numerics%s
+D a-nudira.ads		20180524051736 71e55def ada.numerics.discrete_random%s
+D a-nudira.adb		20180524051736 72908cdb ada.numerics.discrete_random%b
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051738 491b781d ada.tags%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D bag_package.ads	20181014133514 7653b0d0 bag_package%s
+D bag_package.adb	20181014133406 1c82636e bag_package%b
+D bag_test.adb		20181014133830 d31a7e0c bag_test%b
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-imgint.ads		20180524051736 02dbe0c2 system.img_int%s
+D s-imguns.ads		20180524051736 9ff43cf7 system.img_uns%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-rannum.ads		20180524051736 99ade2f2 system.random_numbers%s
+D s-rannum.adb		20180524051738 20ba1217 system.random_numbers%b
+D s-ransee.ads		20180524051738 01a57b33 system.random_seed%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-valuns.ads		20180524051738 10a8ed3b system.val_uns%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 13|1r24 1r59 2r5 8r28
+X 4 a-numeri.ads
+16K13*Numerics 32e17 13|1r28 8r32
+X 5 a-nudira.ads
+44k22*Discrete_Random 75e33 13|1w37 8r41
+50R9 Generator<23|63R9> 13|10r19[8]
+52V13 Random{integer} 13|19s24[8]
+55U14 Reset<23|100p14> 13|15s13[8]
+X 6 a-nudira.adb
+53V16 Random[23|83]{integer} 24|392b13[13|8]
+X 9 a-textio.ads
+49K13*Text_IO 471e16 13|1w63 2r9
+242U14*Put 13|27s13
+263U14*Put_Line 13|28s13
+X 11 bag_package.ads
+7k9*Bag_Package 22e16 13|1w6 6r28
+8R9 Bag 13|7r19[6]
+9U14 Empty 13|13s13[6]
+10U14 Add 13|20s16[6]
+11U14 Remove 13|31s19[6]
+12V13 Has_Any{boolean} 13|26s22[6]
+X 13 bag_test.adb
+4U11*Bag_Test 4b11 35l5 35t13
+5I12 Kocka{integer} 6r40 8r57 9r10
+6K12 Dice_Bag[11|7] 7r10 13r4 20r7 26r13 31r10
+7r4 dice{11|8R9[6]} 13m19 13r19 20m20 20r20 26r30 31m26 31r26
+8K12 Rand_Int[5|44] 10r10 15r4 19r15
+9i4 Roll{5I12} 19m7 20r26
+10r4 Seed{5|50R9[8]} 15r19 19r31
+11b4 l{boolean} 24r10 29m13
+18i8 I{integer}
+25i11 I{integer} 26r36 28r36 31r32
+X 14 interfac.ads
+74M9*Unsigned_32
+77M9*Unsigned_64
+X 23 s-rannum.ads
+75V13*Random{14|74M9} 24|221i21
+76V13*Random{14|77M9} 24|221i21
+

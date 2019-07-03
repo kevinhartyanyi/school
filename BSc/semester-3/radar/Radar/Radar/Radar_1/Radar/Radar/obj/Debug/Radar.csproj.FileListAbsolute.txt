@@ -1,0 +1,7 @@
+C:\Users\montr\Desktop\Radar\Radar\bin\Debug\Radar.exe.config
+C:\Users\montr\Desktop\Radar\Radar\bin\Debug\Radar.exe
+C:\Users\montr\Desktop\Radar\Radar\bin\Debug\Radar.pdb
+C:\Users\montr\Desktop\Radar\Radar\obj\Debug\Radar.csprojAssemblyReference.cache
+C:\Users\montr\Desktop\Radar\Radar\obj\Debug\Radar.csproj.CoreCompileInputs.cache
+C:\Users\montr\Desktop\Radar\Radar\obj\Debug\Radar.exe
+C:\Users\montr\Desktop\Radar\Radar\obj\Debug\Radar.pdb

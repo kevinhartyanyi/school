@@ -1,0 +1,17 @@
+INPUT(
+./debug\main.o
+./debug\cardpack.o
+./debug\configurationdialog.o
+./debug\gamemanager.o
+./debug\imagebutton.o
+./debug\gamewidget.o
+./debug\playerstatuswidget.o
+./debug\mainwindow.o
+./debug\qrc_packs.o
+./debug\moc_configurationdialog.o
+./debug\moc_gamemanager.o
+./debug\moc_imagebutton.o
+./debug\moc_gamewidget.o
+./debug\moc_playerstatuswidget.o
+./debug\moc_mainwindow.o
+);

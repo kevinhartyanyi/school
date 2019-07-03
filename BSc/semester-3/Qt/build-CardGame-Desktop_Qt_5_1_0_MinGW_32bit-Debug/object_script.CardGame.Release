@@ -1,0 +1,17 @@
+INPUT(
+./release\main.o
+./release\cardpack.o
+./release\configurationdialog.o
+./release\gamemanager.o
+./release\imagebutton.o
+./release\gamewidget.o
+./release\playerstatuswidget.o
+./release\mainwindow.o
+./release\qrc_packs.o
+./release\moc_configurationdialog.o
+./release\moc_gamemanager.o
+./release\moc_imagebutton.o
+./release\moc_gamewidget.o
+./release\moc_playerstatuswidget.o
+./release\moc_mainwindow.o
+);

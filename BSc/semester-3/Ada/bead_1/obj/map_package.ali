@@ -1,0 +1,120 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U map_package%b		map_package.adb		d579b40b NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system%s		system.ads		system.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+
+U map_package%s		map_package.ads		1b99096d BN EE NE OO PK GE
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20180524051736 bb51c45a ada.numerics%s
+D a-nudira.ads		20180524051736 71e55def ada.numerics.discrete_random%s
+D a-nudira.adb		20180524051736 72908cdb ada.numerics.discrete_random%b
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051738 491b781d ada.tags%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D map_package.ads	20181020115630 1b99096d map_package%s
+D map_package.adb	20181020123230 371853d3 map_package%b
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-rannum.ads		20180524051736 99ade2f2 system.random_numbers%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 14|1r6 1r41 6r33 9r31 18r10 26r7 30r7 33r13 35r10 40r31 46r7
+. 47r7 74r7
+X 4 a-numeri.ads
+16K13*Numerics 32e17 14|1r10 6r37 9r35 40r35
+X 5 a-nudira.ads
+44k22*Discrete_Random 75e33 14|1w19 6r46 9r44 40r44
+50R9 Generator<20|63R9> 14|7r24[6] 10r25[9] 41r21[40]
+52V13 Random{13|2E9} 14|17s38[6] 23s25[9] 24s25[9] 45s26[40]
+55U14 Reset<20|100p14> 14|14s18[6] 22s16[9] 44s16[40]
+X 9 a-textio.ads
+49K13*Text_IO 471e16 14|1w45 18r14 26r11 30r11 33r17 35r14 46r11 47r11 74r11
+242U14*Put 14|33s25
+263U14*Put_Line 14|18s22 26s19 30s19 35s22 46s19 47s19 74s19
+X 13 map_package.ads
+2E9 Field 4r42 5r10 17r67 14|6r62 18r96 33r35 47r136 74r139
+3+9 Warrior 4r59 12r44 14|38r44
+4U19 Field_Action 4=32 4=49 14|76s7
+4*32 F{2E9}
+4*49 W{3+9}
+5*4 Empty{2E9} 14|84r33
+7k9*Map_Package 2z9 3z9 4z19 5z4 17E9 29l5 29e16 14|2b14 93l5 93t16
+8R9*Map 8d13 10r29 11r24 12r29 13r25 22c9 26e17 14|5r29 28r24 38r29 80r25
+8i13 n{positive} 22r13 23r25 23r30 14|8r43
+10U14*Init 10=19 14|5b14 27t7
+10r19 M{8R9} 14|5b19 8r41 15r16 16r19 17m10 18r108 25m7 26r76 26r116
+11U14*Put 11>18 14|28b14 37t7
+11r18 M{8R9} 14|28b18 31r16 32r19 33r47
+12U14*Move 12=19 12=34 14|38b14 78t7
+12r19 M{8R9} 14|38b19 47r68 47r107 47r148 47r157 47r170 49r13 50m13 50r29
+. 52m13 52r29 55r13 55r28 56m13 58m13 58r29 61r13 62m13 62r29 64m13 64r29
+. 67r13 67r28 68m13 70m13 70r29 74r71 74r110 74r151 74r160 74r173 76m20 76r20
+. 76r29 76r42
+12*34 W{3+9} 14|38b34 76m57
+13V13*Is_Empty{boolean} 13>22 14|80b13 90t7
+13r22 M{8R9} 14|80b22 82r16 83r19 84r16
+17A9 matrix(2E9)<integer><integer> 23r15
+18R9 Cord 21e17 24r17 14|11r11
+19i7 x{positive} 14|23m11 26r87 47r79 47r168 61r24 62m24 64m24 64r40 67r24
+. 68m24 70m24 70r40 74r82 74r171 76r40
+20i7 y{positive} 14|24m11 26r127 47r118 47r181 49r24 50m24 52m24 52r40 55r24
+. 56m24 58m24 58r40 74r121 74r184 76r53
+23a7 Fields{17A9} 14|15r18 16r21 17m12 18r110 31r18 32r21 33r49 47r150 50r31
+. 55r30 62r31 67r30 74r153 76m22 82r18 83r21 84r18
+24r7 Position{18R9} 14|25m9 26r78 26r118 47r70 47r109 47r159 47r172 49r15
+. 50m15 52m15 52r31 55r15 56m15 58m15 58r31 61r15 62m15 64m15 64r31 67r15
+. 68m15 70m15 70r31 74r73 74r112 74r162 74r175 76r31 76r44
+X 14 map_package.adb
+6K15 Rand_Field[5|44] 7r13 14r7 17r27
+7r7 Seed{5|50R9[6]} 14r24 17r45
+8I15 Size{positive} 9r60
+9K15 Rand_Pos[5|44] 10r16 22r7 23r16 24r16
+10r7 Seed_Pos{5|50R9[9]} 22r22 23r32 24r32
+11r7 Pos{13|18R9} 23m7 24m7 25r21
+15i11 I{integer} 17r19 18r60 18r117
+16i14 J{integer} 17r21 18r85 18r119
+31i11 I{integer} 33r58
+32i14 J{integer} 33r56
+39E12 Direction 39e48 40r60 42r14 46r46
+39n26 Up{39E12} 48r19
+39n30 Down{39E12} 54r22
+39n36 Left{39E12} 60r22
+39n42 Right{39E12}
+40K15 Rand_Dir[5|44] 41r12 44r7 45r17
+41r7 Seed{5|50R9[40]} 44r22 45r33
+42e7 Random{39E12} 45m7 46r62 48r10 54r13 60r13
+82i11 I{integer} 84r25
+83i14 J{integer} 84r27
+

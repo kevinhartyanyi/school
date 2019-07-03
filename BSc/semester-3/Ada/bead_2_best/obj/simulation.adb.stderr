@@ -1,0 +1,3 @@
+simulation-map.adb:20:10: warning: potentially blocking operation in protected operation
+simulation-map.adb:21:10: warning: potentially blocking operation in protected operation
+simulation-map.adb:57:24: warning: potentially blocking operation in protected operation

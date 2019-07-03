@@ -1,0 +1,99 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_PROTECTED_TYPES
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U simulation_safe_random%b  simulation_safe_random.adb  749426f5 OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+U simulation_safe_random%s  simulation_safe_random.ads  393b1da7 EE OO PF PK IL
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+W system%s		system.ads		system.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-numeri.ads		20180524051736 bb51c45a ada.numerics%s
+D a-nudira.ads		20180524051736 71e55def ada.numerics.discrete_random%s
+D a-nudira.adb		20180524051736 72908cdb ada.numerics.discrete_random%b
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-c.ads		20180524051736 5421119b interfaces.c%s
+D i-cstrin.ads		20180524051736 341d0ddf interfaces.c.strings%s
+D simulation_safe_random.ads  20181206055252 48de4048 simulation_safe_random%s
+D simulation_safe_random.adb  20181206055252 4daf3b52 simulation_safe_random%b
+D system.ads		20180524051738 32a08138 system%s
+D s-atacco.ads		20180524051738 4c36d12f system.address_to_access_conversions%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-imguns.ads		20180524051736 9ff43cf7 system.img_uns%s
+D s-multip.ads		20180524051736 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20180524051738 2e5b26a9 system.os_interface%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-rannum.ads		20180524051736 99ade2f2 system.random_numbers%s
+D s-rannum.adb		20180524051738 20ba1217 system.random_numbers%b
+D s-ransee.ads		20180524051738 01a57b33 system.random_seed%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stausa.ads		20180524051736 017a0a05 system.stack_usage%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20180524051738 601f6b72 system.task_info%s
+D s-taspri.ads		20180524051738 6c1d93d4 system.task_primitives%s
+D s-taskin.ads		20180524051738 1d8c1ccb system.tasking%s
+D s-taprob.ads		20180524051738 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-valuns.ads		20180524051738 10a8ed3b system.val_uns%s
+D s-win32.ads		20180524051736 b7f96285 system.win32%s
+X 1 ada.ads
+16K9*Ada 20e8 10|1r6 4r30 11|1r6
+X 3 a-numeri.ads
+16K13*Numerics 32e17 10|1r10 4r34 11|1r10
+X 4 a-nudira.ads
+42E9 Result_Subtype 10|4r59
+44k22*Discrete_Random 75e33 10|1w19 4r43 11|1w19
+50R9*Generator<19|63R9> 10|16r21[4]
+52V13*Random{integer} 11|11s28[10|4] 12s28[10|4]
+55U14*Reset<19|100p14> 11|16s21[10|4]
+X 5 a-nudira.adb
+53V16 Random[19|83]{integer} 20|392b13[10|4]
+X 7 interfac.ads
+74M9*Unsigned_32
+77M9*Unsigned_64
+X 10 simulation_safe_random.ads
+2K9*simulation_safe_random 22l5 22e27 11|2b14 24l5 24t27
+4K12*Random_Int[4|44] 16r10 11|11r17 12r17 16r10
+6R9*Map 9e14 12r35 11|6r32
+7i7*X{integer} 11|11m12
+8i7*Y{integer} 11|12m12
+11w14*Safe_Random 11|5b16 18l8 18t19
+12U17 Get_Random 12<28 11|6b14 13t10
+12r28 R{6R9} 11|6b25 11m10 12m10
+13U17 Initalise 11|9s13 14b17 17t10
+15b7 Ready{boolean} 11|8r17
+16r7 G{4|50R9[4]} 11|11r35 12r35 16r27
+X 19 s-rannum.ads
+75V13*Random{7|74M9} 20|221i21
+76V13*Random{7|77M9} 20|221i21
+X 25 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

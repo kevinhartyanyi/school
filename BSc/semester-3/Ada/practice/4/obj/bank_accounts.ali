@@ -1,0 +1,87 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U bank_accounts%b	bank_accounts.adb	8facc59d NE OO PK GE
+
+U bank_accounts%s	bank_accounts.ads	018fb103 BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051738 491b781d ada.tags%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D bank_accounts.ads	20181104145820 89920259 bank_accounts%s
+D bank_accounts.adb	20181104145842 063ec7c4 bank_accounts%b
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 8|1r6
+X 6 a-textio.ads
+49K13*Text_IO 471e16 8|1w10
+X 8 bank_accounts.ads
+3+9 Transaction 4r59 6r83
+4A9 Transaction_Array(3+9)<integer> 15r55 26r24 9|30r55
+5i4 Max_Transactions{positive} 26r45
+6V18 Create_Transaction{3+9} 6>37 6>50 6>61 9|6s52 16s55 20s55 43s55 44s51
+. 49s51 50s55
+6i37 From{natural}
+6i50 To{natural}
+6i61 Value{natural}
+7k9*Bank_Accounts 3z9 4z9 5z4 6z18 22E9 30l5 30e18 9|1b14 57l5 57t18
+8R9*Bank_Account 8d22 12r34 13r35 14r31 15r34 16r23 18r32 18r57 22c9 27e17
+. 9|3r34 13r35 26r31 30r34 34r23 39r32 39r57
+8i22 ID{positive} 22r22 9|6r75 16r80 20r80 43r79 43r85 44r75 44r81 49r75
+. 49r81 50r79 50r85
+10X4*Limit_Reach 9|9r16
+12U14*Deposit 12=22 12>48 9|3b14 11t7
+12r22 Acc{8R9} 9|3b22 5m7 5r22 6m7 6r24 6r71 7m7 7r32
+12i48 Value{positive} 9|3b48 5r36 6r80 8r10
+13U14*Withdraw 13=23 13>49 9|13b14 24t7
+13r23 Acc{8R9} 9|13b23 15r18 16m10 16r27 16r76 16r83 17m10 19m10 19r25 20m10
+. 20r27 20r76 23m7 23r32
+13i49 Value{positive} 9|13b49 15r10 19r39 20r83
+14V14*Get_Balance{natural} 14>26 9|26b14 29t7
+14r26 Acc{8R9} 9|26b26 28r14
+15V13*Get_Transactions{4A9} 15>30 9|30b13 33t7
+15r30 Acc{8R9} 9|30b30 32r14
+16V13*Get_C{natural} 16>19 9|34b13 37t7
+16r19 Acc{8R9} 9|34b19 36r14
+18U14*Send 18=19 18=46 18>71 9|39b14 54t7
+18r19 From{8R9} 9|39b19 41r18 42r37 43m10 43r28 43r74 43r88 44r70 44r84 45m10
+. 48m10 48r26 49r70 50m10 50r28 50r74 52m7 52r33
+18r46 To{8R9} 9|39b46 42m10 42r24 43r82 44m10 44r26 44r78 47m10 47r24 49m10
+. 49r26 49r78 50r82 53m7 53r31
+18i71 Value{positive} 9|39b71 41r10 47r37 48r41 49r84 50r88
+24i10 Balance{natural} 9|5m11 5r26 15r22 16r87 17m14 19m14 19r29 28r18 41r23
+. 42m13 42r27 42r42 43r93 44r89 45m15 47m13 47r27 48m15 48r31
+25i10 Transaction_Count{natural} 9|6r28 7m11 7r36 16r31 20r31 23m11 23r36
+. 36r18 43r33 44r29 49r29 50r33 52m12 52r38 53m10 53r34
+26a10 Transactions{4A9} 9|6m11 16m14 20m14 32r18 43m15 44m13 49m13 50m15
+

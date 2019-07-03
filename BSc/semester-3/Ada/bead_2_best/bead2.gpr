@@ -1,0 +1,8 @@
+project Bead2 is
+
+   for Source_Dirs use ("src");
+   for Object_Dir use "obj";
+   for Main use ("simulation.agent", "simulation.projectile", "simulation.map", "simulation.ship", "simulation.base", "simulation.printer", "simulation.safe_random", "simulation.adb");
+
+end Bead2;
+

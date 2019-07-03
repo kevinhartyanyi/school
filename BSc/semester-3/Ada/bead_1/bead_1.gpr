@@ -1,0 +1,8 @@
+project Bead_1 is
+
+   for Source_Dirs use ("src");
+   for Object_Dir use "obj";
+   for Main use ("simulation", "bag_package", "bag_package.ads", "bag_test", "main.adb", "map_package.adb", "map_package.ads", "warrior_package.adb", "warrior_package.ads");
+
+end Bead_1;
+

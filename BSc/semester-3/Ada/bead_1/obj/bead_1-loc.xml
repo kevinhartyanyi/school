@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>C:\Users\Kevin\Desktop\semester 3\Ada\bead_1.gpr</vfs_file>
+    <file_marker column=" 47" line=" 8" >
+      <vfs_project>C:\Users\Kevin\Desktop\semester 3\Ada\bead_1.gpr</vfs_project>
+      <vfs_file>C:\Users\Kevin\Desktop\semester 3\Ada\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 28" line=" 14" >
+      <vfs_project>C:\Users\Kevin\Desktop\semester 3\Ada\bead_1.gpr</vfs_project>
+      <vfs_file>C:\Users\Kevin\Desktop\semester 3\Ada\src\bag_package.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 76" line=" 30" >
+      <vfs_project>C:\Users\Kevin\Desktop\semester 3\Ada\bead_1.gpr</vfs_project>
+      <vfs_file>C:\Users\Kevin\Desktop\semester 3\Ada\src\bag_package.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 10" >
+      <vfs_project>C:\Users\Kevin\Desktop\semester 3\Ada\bead_1.gpr</vfs_project>
+      <vfs_file>C:\Users\Kevin\Desktop\semester 3\Ada\src\bag_test.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 24" >
+      <vfs_project>C:\Users\Kevin\Desktop\semester 3\Ada\bead_1.gpr</vfs_project>
+      <vfs_file>C:\Users\Kevin\Desktop\semester 3\Ada\src\map_package.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 31" >
+      <vfs_project>C:\Users\Kevin\Desktop\semester 3\Ada\bead_1.gpr</vfs_project>
+      <vfs_file>C:\Users\Kevin\Desktop\semester 3\Ada\src\warrior_package.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 11" >
+      <vfs_project>C:\Users\Kevin\Desktop\semester 3\Ada\bead_1.gpr</vfs_project>
+      <vfs_file>C:\Users\Kevin\Desktop\semester 3\Ada\src\warrior_package.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 44" line=" 52" >
+      <vfs_project>C:\Users\Kevin\Desktop\semester 3\Ada\bead_1.gpr</vfs_project>
+      <vfs_file>C:\Users\Kevin\Desktop\semester 3\Ada\src\map_package.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 10" line=" 16" >
+      <vfs_project>C:\Users\Kevin\Desktop\semester 3\Ada\bead_1.gpr</vfs_project>
+      <vfs_file>C:\Users\Kevin\Desktop\semester 3\Ada\src\simulation.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

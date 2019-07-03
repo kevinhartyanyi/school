@@ -1,0 +1,72 @@
+V "GNAT Lib v2018"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U main%b		main.adb		c56e706d NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W bank_accounts%s	bank_accounts.adb	bank_accounts.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051738 491b781d ada.tags%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D bank_accounts.ads	20181104132742 0da9b070 bank_accounts%s
+D bank_accounts.adb	20181104132742 ebdff9cf bank_accounts%b
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D main.adb		20181104132826 40da7347 main%b
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-imgint.ads		20180524051736 02dbe0c2 system.img_int%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 12|1r6 22r4 24r4 26r4
+X 6 a-textio.ads
+49K13*Text_IO 471e16 12|1w10 22r8 24r8 26r8
+242U14*Put 12|22s16 24s16 26s16
+X 8 bank_accounts.ads
+6k9*Bank_Accounts 23e18 12|1w19 18r24
+7R9 Bank_Account 12|19r20[18]
+9U14 Deposit 12|23s9[18]
+10U14 Withdraw 12|25s9[18]
+11V14 Get_Balance{natural} 12|22s39[18] 24s39[18] 26s39[18]
+X 12 main.adb
+2U11*Main 2b11 31l5 31t9
+3R9 myTransaction 8e17 9r68 10r23 17r49 18r38
+5i10 From{natural} 12m22
+6i10 To{natural} 13m22
+7i10 Value{natural} 14m22
+9V13 myCreate{3R9} 9b13 9>22 9>35 9>46 16t7 18r65
+9i22 From{natural} 12r30
+9i35 To{natural} 13r28
+9i46 Value{natural} 14r31
+10r7 newTransaction{3R9} 12m7 13m7 14m7 15r14
+17A9 myArray(3R9)<integer> 18r53
+18K12 bank[8|6] 19r15 22r34 23r4 24r34 25r4 26r34
+19r4 Customer1{8|7R9[18]} 22r51 23m17 23r17 24r51 25m18 25r18 26r51
+

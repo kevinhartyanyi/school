@@ -1,0 +1,14 @@
+INPUT(
+./debug\main.o
+./debug\game.o
+./debug\tablesize.o
+./debug\warrior.o
+./debug\gameover.o
+./debug\create.o
+./debug\qrc_resources.o
+./debug\moc_game.o
+./debug\moc_tablesize.o
+./debug\moc_warrior.o
+./debug\moc_gameover.o
+./debug\moc_create.o
+);

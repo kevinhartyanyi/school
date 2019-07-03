@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/Load">
+        <file>Load/Game2.txt</file>
+        <file>Load/Game3.txt</file>
+        <file>Load/Game4.txt</file>
+        <file>Load/Game5.txt</file>
+        <file>Load/Game1.txt</file>
+    </qresource>
+</RCC>

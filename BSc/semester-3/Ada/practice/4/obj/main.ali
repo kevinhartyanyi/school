@@ -1,0 +1,94 @@
+V "GNAT Lib v2018"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U main%b		main.adb		763f9af6 NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W bank_accounts%s	bank_accounts.adb	bank_accounts.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051738 491b781d ada.tags%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D bank_accounts.ads	20181104145820 89920259 bank_accounts%s
+D bank_accounts.adb	20181104145842 063ec7c4 bank_accounts%b
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D main.adb		20181104145736 77b02bf5 main%b
+D system.ads		20180524051738 32a08138 system%s
+D s-conca2.ads		20180524051736 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-imgint.ads		20180524051736 02dbe0c2 system.img_int%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 12|1r6 23r4 27r7 28r7 29r7 31r4 35r7 36r7 37r7 41r4
+X 6 a-textio.ads
+49K13*Text_IO 471e16 12|1w10 23r8 27r11 28r11 29r11 31r8 35r11 36r11 37r11
+. 41r8
+263U14*Put_Line 12|23s16 27s19 28s19 29s19 31s16 35s19 36s19 37s19 41s16
+X 8 bank_accounts.ads
+7k9*Bank_Accounts 30e18 12|1w19 18r24
+8R9 Bank_Account 12|19r20[18] 20r20[18]
+12U14 Deposit 12|24s9[18]
+13U14 Withdraw 12|32s9[18]
+14V14 Get_Balance{natural} 12|23s44[18] 31s44[18] 41s44[18]
+15V13 Get_Transactions{12|17A9} 12|25s17[18] 33s17[18]
+16V13 Get_C{natural} 12|26s21[18] 34s21[18]
+X 12 main.adb
+2U11*Main 2b11 47l5 47t9
+3R9 myTransaction 8e17 9r68 10r23 17r49 18r38
+5i10 From{natural} 12m22 27r62 35r62
+6i10 To{natural} 13m22 28r60 36r60
+7i10 Value{natural} 14m22 29r63 37r63
+9V13 myCreate{3R9} 9b13 9>22 9>35 9>46 16t7 18r65
+9i22 From{natural} 12r30
+9i35 To{natural} 13r28
+9i46 Value{natural} 14r31
+10r7 newTransaction{3R9} 12m7 13m7 14m7 15r14
+17A9 myArray(3R9)<integer> 18r53 21r10
+18K12 bank[8|7] 19r15 20r15 23r39 24r4 25r12 26r16 31r39 32r4 33r12 34r16
+. 41r39
+19r4 Customer1{8|8R9[18]} 23r56 24m17 24r17 25r34 26r27 31r56 32m18 32r18
+. 33r34 34r27 41r56
+20r4 Customer2{8|8R9[18]}
+21a4 Test{17A9} 25m4 27r54 28r52 29r55 33m4 35r54 36r52 37r55
+26i8 I{integer} 27r59 28r57 29r60
+34i8 I{integer} 35r59 36r57 37r60
+

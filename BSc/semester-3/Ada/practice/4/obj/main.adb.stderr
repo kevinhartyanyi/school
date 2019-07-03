@@ -1,0 +1,2 @@
+main.adb:20:04: warning: variable "Customer2" is never read and never assigned
+main.adb:23:56: warning: "Customer1" may be referenced before it has a value
